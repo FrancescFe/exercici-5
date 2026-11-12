@@ -1,0 +1,22 @@
+name: conversor
+
+on:
+  push:
+    branches:
+      - test
+
+
+jobs:
+  compile-test-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+  compile-test-mac:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
