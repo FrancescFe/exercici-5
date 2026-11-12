@@ -17,6 +17,9 @@ jobs:
       - name: Compila el programa
         run: make conversor
 
+      - name: Executa el programa
+        run: ./conversor c2f 100
+
   compile-test-mac:
     runs-on: macos-latest
 
@@ -26,3 +29,6 @@ jobs:
 
       - name: Compila el programa
         run: make conversor
+
+      - name: Executa el programa
+        run: ./conversor c2f 100
