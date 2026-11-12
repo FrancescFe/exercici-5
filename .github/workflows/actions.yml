@@ -14,9 +14,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Compila el programa
+        run: make conversor
+
   compile-test-mac:
     runs-on: macos-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      - name: Compila el programa
+        run: make conversor
